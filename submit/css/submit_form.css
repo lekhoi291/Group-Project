@@ -1,0 +1,97 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.upload_preview {
+  background-color: #333;
+  position: relative;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 60px 0 25px;
+}
+
+.upload_wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.upload_wrapper .choose_file_button_wrapper {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+}
+
+.upload_wrapper .choose_file_button_wrapper .choose_file_button {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 13px 80px;
+  border-radius: 5px;
+  background-color: #0096fa;
+  cursor: pointer;
+  font-size: 18px;
+  color: #f5f5f5;
+  border: none;
+  line-height: 1;
+  margin: 0;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.upload_wrapper .choose_file_button_wrapper input {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.upload_wrapper .choose_file_button_wrapper input[type="file"] {
+  margin: 0;
+  border: none;
+}
+
+.upload_wrapper .choose_file_button_wrapper .upload_note {
+  margin-top: 10px;
+  line-height: 1.3;
+  color: #ccc;
+}
+
+.upload_wrapper .image_container {
+  padding: 10px 15px 20px;
+}
+
+.upload_wrapper .image_container .preview_image {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  margin: 0 auto;
+  vertical-align: top;
+  background-color: #4a4a4a;
+  -webkit-animation: .5s ease-in-out;
+          animation: .5s ease-in-out;
+  overflow: hidden;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1s ease-in-out forwards;
+          animation: fade-in 1s ease-in-out forwards;
+}
+
+.hidden {
+  display: none !important;
+}
+/*# sourceMappingURL=submit_form.css.map */
