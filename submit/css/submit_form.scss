@@ -7,7 +7,7 @@
     position: relative;
     padding: 0;
     user-select: none;
-    padding: 60px 0 25px;
+    margin: 0 auto;
 }
 
 .upload_wrapper{
@@ -15,6 +15,8 @@
     margin: 0 auto;
     text-align: center;
     position: relative;
+    padding: 60px 0 25px;
+    display: block;
 
     .choose_file_button_wrapper{
         display: inline-block;
@@ -59,29 +61,63 @@
             color: #ccc;
         }
     }
+}
 
-    .image_container{
-        padding: 10px 15px 20px;
+.image_container{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 20px 15px;
+    display: block;
 
-        .preview_image{
-            width: 600px;
-            height: 600px;
-            position: relative;
-            display: inline-block;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: 50%;
-            margin: 0 auto;
+    .preview_image{
+        width: 600px;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        margin: 0 auto;
+        vertical-align: top;
+        background-color: #4a4a4a;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+
+        .remove_image{
+            transition: opacity .2s;
+            opacity: .5;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 3px;
+            line-height: 0.8;
+            background-color: #fff;
+            border-radius: 3px;
+            cursor: pointer;
+            color: #333;
             vertical-align: top;
-            background-color: #4a4a4a;
-            animation: .5s ease-in-out;
-            overflow: hidden;
+            font-size: 14px;
+            display: inline-block;
+            
+            &::before{
+                content: '\2716'; 
+            }
         }
     }
 }
 
 .fade-in{
     animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .hidden{

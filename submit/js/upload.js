@@ -12,9 +12,17 @@ $(document).ready(function(){
         reader.readAsDataURL(input.files[0]);
         }
     }
+
     $("#file-input").change(function(){
-        $('.image_container').css('display','inline-block');
-        $('.choose_file_button_wrapper').hide(); // From Stackoverflow answer
+        $('.image_container').css('display','block');
+        $('.upload_wrapper').css('display', 'none');
         readURL(this);
+    });
+
+    $(".remove_image").click(function(){
+        $(".preview_image").css('background-image', '');
+        $(".image_container").css('display', 'none');
+        $('.upload_wrapper').css('display','block').addClass('fade-in');
+        $("#file-input").val(''); 
     });
 });

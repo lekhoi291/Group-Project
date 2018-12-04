@@ -7,6 +7,7 @@
         <script src="../Js/jquery-3.3.1.min.js"></script>
         <link rel="icon" href="../img/plankton.png">
         <link rel="stylesheet" href="css/submit_form.css">
+
     </head>
     <body>
         <header id="menuwrapper">
@@ -60,7 +61,7 @@
         </header>
         <div class="upload_preview">
             <script src="js/upload.js"></script>
-            <div class="upload_wrapper fade-in">
+            <div class="upload_wrapper">
                 <div class="choose_file_button_wrapper">
                     <button type="button" class="choose_file_button">
                         <span>Select Files</span>
@@ -71,9 +72,14 @@
                         You can upload a file at once.
                     </div>
                 </div>
-                <ul class="image_container fade-in">
-                    <li class="preview_image"></li>
-                </ul>
+            </div>
+            <div class="image_container fade-in">
+                <div class="preview_image">
+                    <div class="remove_image">
+                        <i class="icon_close"></i>
+                    </div>  
+                    </div>
+                </div>    
             </div>
         </div>
     </body>
