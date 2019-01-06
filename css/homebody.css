@@ -1,0 +1,41 @@
+.homebody2 {
+  position: relative;
+  color: #333;
+  padding: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  height: 100%;
+  width: 90%;
+}
+
+.homebody3 {
+  position: relative;
+  color: #333;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.homebody4 {
+  position: relative;
+  color: #333;
+  margin: 0 auto;
+  width: 100%;
+  border-top: 1px solid #d6dee5;
+}
+
+.homebody4 .foot1 {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+/*# sourceMappingURL=homebody.css.map */

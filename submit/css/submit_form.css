@@ -101,15 +101,23 @@
   line-height: 0.8;
   background-color: #fff;
   border-radius: 3px;
+  display: none;
   cursor: pointer;
   color: #333;
   vertical-align: top;
   font-size: 14px;
-  display: inline-block;
 }
 
 .image_container .preview_image .remove_image::before {
   content: '\2716';
+}
+
+.image_container .preview_image .remove_image:hover {
+  opacity: 0.8;
+}
+
+.image_container .preview_image:hover .remove_image {
+  display: inline-block;
 }
 
 .fade-in {
@@ -137,5 +145,176 @@
 
 .hidden {
   display: none !important;
+}
+
+.form_submit {
+  min-width: 740px;
+  background-color: #f4f2f4;
+}
+
+.pic_submit {
+  margin: 0 auto;
+  width: 45%;
+  padding-bottom: 50px;
+  display: block;
+}
+
+.pic_submit .item {
+  position: relative;
+  padding: 13px 20px;
+  border-top: 1px solid #f6f5f6;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.pic_submit .item dt {
+  display: table-cell;
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.pic_submit .item dd {
+  display: table-cell;
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+.pic_submit .items {
+  position: relative;
+  margin: 10px 0;
+  background-color: #fff;
+  display: block;
+}
+
+.pic_submit .unit {
+  margin: 20px 0;
+  display: block;
+}
+
+.pic_submit .unit .item:first-child {
+  border-top: none;
+}
+
+.pic_submit .text {
+  padding: 0;
+}
+
+.pic_submit .text textarea {
+  height: 108px;
+  padding-bottom: 0;
+  resize: vertical;
+}
+
+.pic_submit .fail-container {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  right: -2px;
+  padding: 8px 10px;
+  max-width: 300px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5;
+  background-color: tomato;
+  border-radius: 5px;
+}
+
+.pic_submit .input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 16px 20px;
+  width: 100%;
+  font-size: 14px;
+  height: auto;
+  line-height: 18px;
+  vertical-align: top;
+  background-color: transparent;
+  border: none;
+}
+
+.pic_submit .input:focus {
+  outline: none;
+}
+
+.pic_submit .options {
+  position: absolute;
+  bottom: 7px;
+  right: 15px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.pic_submit .count-container {
+  color: #999;
+}
+
+.pic_submit dl {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+.pic_submit ul {
+  list-style: none;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
+.pic_submit .inline_list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.pic_submit .inline_list li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.pic_submit label {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+.pic_submit label input[type="radio"] {
+  margin-right: 4px;
 }
 /*# sourceMappingURL=submit_form.css.map */

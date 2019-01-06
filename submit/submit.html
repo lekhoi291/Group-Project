@@ -7,7 +7,6 @@
         <script src="../Js/jquery-3.3.1.min.js"></script>
         <link rel="icon" href="../img/plankton.png">
         <link rel="stylesheet" href="css/submit_form.css">
-
     </head>
     <body>
         <header id="menuwrapper">
@@ -52,34 +51,89 @@
                         </ul>
                         <ul class="list_menu2">
                             <li>
-                                <a href=""><img src="../img/17840-200.png">Gallery</a>
+                                <a href="../Gallery/home_categories.html"><img src="../img/17840-200.png">Categories</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </header>
-        <div class="upload_preview">
-            <script src="js/upload.js"></script>
-            <div class="upload_wrapper">
-                <div class="choose_file_button_wrapper">
-                    <button type="button" class="choose_file_button">
-                        <span>Select Files</span>
-                    </button>
-                    <input type="file" multiple accept="image/gif,image/jpeg,image/png" id="file-input">
-                    <div class="upload_note">
-                        JPEG GIF PNG<br>
-                        You can upload a file at once.
+        <div class="form_submit">
+            <div class="upload_preview">
+                <script src="js/upload.js"></script>
+                <div class="upload_wrapper">
+                    <div class="choose_file_button_wrapper">
+                        <button type="button" class="choose_file_button">
+                            <span>Select Files</span>
+                        </button>
+                        <input type="file" multiple accept="image/gif,image/jpeg,image/png" id="file-input">
+                        <div class="upload_note">
+                            JPEG GIF PNG<br>
+                            You can upload a file at once.
+                        </div>
                     </div>
                 </div>
+                <div class="image_container fade-in">
+                    <div class="preview_image">
+                        <div class="remove_image">
+                            <i class="icon_close"></i>
+                        </div>  
+                    </div> 
+                </div>
             </div>
-            <div class="image_container fade-in">
-                <div class="preview_image">
-                    <div class="remove_image">
-                        <i class="icon_close"></i>
-                    </div>  
-                    </div>
-                </div>    
+            <div class="pic_submit">
+                <section class="unit">
+                    <section class="items">
+                        <div class="input-title item text">
+                            <div class="fail-container"></div>
+                            <script src="js/count.js"></script>
+                            <input type="text" name="title" placeholder="Title" maxlength="32" class="input" onkeyup="title_count(this.value)">
+                            <div class="count-container options">
+                                <span class="charcount">0</span>
+                                /32
+                            </div>
+                        </div>
+                        <div class="input-comment item text">
+                            <div class="fail-container"></div>
+                            <textarea name="comment" placeholder="Description" maxlength="3000"
+                            class="input" style="margin-top: 0px; margin-bottom: 0px; height: 216px;" onkeyup="cmt_count(this.value)"></textarea>
+                        </div>
+                        <div class="count-container options">
+                            <span class="cmtcount">0</span>
+                            /3000
+                        </div>
+                    </section>
+                    <section class="items">
+                        <div class="input-restrict item">
+                            <div class="fail-container"></div>
+                            <dl>
+                                <dt>Privacy Settings</dt>
+                                <dd>
+                                    <ul class="inline_list">
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="restrict" value="0" checked>
+                                                Make Public
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="restrict" value="1">
+                                                My work only
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="restrict" value="2">
+                                                Private
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </section>
+                </section>
             </div>
         </div>
     </body>

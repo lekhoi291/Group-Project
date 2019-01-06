@@ -1,0 +1,140 @@
+.body-info {
+  -webkit-font-smoothing: antialiased;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  position: relative;
+}
+
+.body-info .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.body-info .slider-wrapper {
+  margin-left: 11vw;
+}
+
+.body-info .slider-wrapper div {
+  position: relative;
+}
+
+.body-info .slide-image {
+  height: 24vw;
+  width: 24vw;
+  overflow: hidden;
+}
+
+.body-info .slide-image img {
+  width: 24vw;
+  cursor: pointer;
+}
+
+.body-info .slide-content {
+  width: 25vw;
+  color: #333;
+  padding: 3vw 18vw 3vw 9vw;
+  margin-bottom: 8.5%;
+}
+
+.body-info .slide-date {
+  color: #333;
+  font-size: 1.1vw;
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  padding-bottom: 1.4vw;
+}
+
+.body-info .slide-title {
+  font-size: 1.2vw;
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  padding-bottom: 1.4vw;
+  line-height: 1.55vw;
+}
+
+.body-info .slide-text {
+  font-size: 1.0vw;
+  line-height: 1.2vw;
+  opacity: 0.8;
+  padding-bottom: 4vw;
+  text-align: justify;
+}
+
+.body-info .slide-more {
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  float: left;
+  font-size: 0.9vw;
+}
+
+.body-info div.overlay-blue {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: 0.5 ease all;
+  transition: 0.5 ease all;
+}
+
+.body-info div.overlay-blue:hover {
+  background-color: rgba(13, 27, 43, 0.5);
+}
+
+.body-info .arrows {
+  width: 3.5vw;
+  margin-top: -5.8vw;
+  margin-left: 72vw;
+  position: relative;
+}
+
+.body-info .arrow {
+  display: inline-block;
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 0.15vw solid black;
+  border-left: 0.15vw solid black;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+  color: transparent;
+}
+
+.body-info .arrow:hover {
+  border-color: #0A8ACB;
+  border-width: 0.25vw;
+}
+
+.body-info .arrow:before {
+  display: block;
+  height: 200%;
+  width: 200%;
+  margin-left: -50%;
+  margin-right: -50%;
+  content: "";
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.body-info .arrow.prev {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 0;
+}
+
+.body-info .arrow.next {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  right: 0;
+}
+/*# sourceMappingURL=slider_news.css.map */
