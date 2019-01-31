@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <title>[Plankton]</title>
+        <link rel="stylesheet" href="css/header.css" type="text/css">
+        <link rel="stylesheet" href="css/mainbody.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+        <script src="Js/jquery-3.3.1.min.js"></script>
+        <script src="Js/jquery-3.3.1.js"></script>
+        <link rel="icon" href="img/plankton.png">
+        <link rel="stylesheet" href="css/homebody.css">
+        <link rel="stylesheet" href="css/trash.css">
+
+    </head>
+    <body class="bodyhome">
+        <header class="global-header">
+            <div class="layout-wrapper">
+                <div class="title">
+                    <a href="index.html" class="icon header-logo"></a>
+                </div>
+                <nav class="link-list">
+                    <ul>
+                        <!-- <li class="link-item">
+                            <strong>
+                                <a href="" style="color: #ff7e48;">Campaign</a>
+                            </strong>
+                        </li> -->
+                        <li class="link-item">
+                            <a href="">Tags</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="">Wiki</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="">Help</a>
+                        </li>
+                        <!-- <li class="link-item">
+                            <a href="">Login</a>
+                        </li> -->
+                        <li class="link-item settings-menu">
+                            <a href="" class="label">Settings▾</a>
+                            <ul class="items">
+                                <li>
+                                    <a href="" class="item">User Settings</a>
+                                </li>
+                                <li>
+                                    <a href="" class="item">Profile Settings</a>
+                                </li>
+                                <li>
+                                    <a href="" class="item">Notification Settings</a>
+                                </li>
+                                <li>
+                                    <a href="" class="item">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-list">
+                    <ul class="menus">
+                        <li class="home">
+                            <a href="" class="current">
+                                <span class="menu-icon icon-home"></span>Home
+                            </a>
+                        </li>
+                        <li class="upload">
+                            <a href="submit/submit.html">
+                                <span class="menu-icon icon-upload"></span>Submit
+                            </a>
+                            <a href="" class="header-mangae">
+                                <span class="text"></span>Manage     
+                            </a>
+                        </li>
+                        <li class="bookmark">
+                            <a href="">
+                                <span class="menu-icon icon-bookmark"></span>Bookmark
+                            </a>
+                        </li>
+                        <li class="feed">
+                            <a href="">
+                                <span class="menu-icon icon-feed"></span>Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-menu-right">
+                    <div class="menu-group">
+                        <a class="menu-item" href="Gallery/home_categories.html">
+                            <img class="gallery-icon" src="img/gallery.png">
+                            <span class="label">Gallery</span>
+                        </a>
+                    </div>
+                    <div class="menu-group">
+                        <a href="" class="menu-item">
+                            <img class="discovery-icon" src="img/research.png">
+                            <span class="label">Research</span>
+                        </a>
+                        <a href="" class="menu-item">
+                            <img class="contact-icon" src="img/contact.png">
+                            <span class="label">Contact</span>
+                        </a>
+                    </div>
+                </div>
+                <form id="suggest-container" autocomplete="off" method="get" class="ui-search" action="search.php">
+                    <input type="hidden" name="s_mode" value="s_tag">
+                    <div class="container">
+                        <input type="text" id="suggest-input" name="word" valueplaceholder="Search result">
+                    </div>
+                    <input type="submit" class="submit search-icon" value>
+                </form>
+            </div>
+        </header>
+
+        <div class="homebody-wrapper">
+            <div class="my-page">
+                <div class="layout-west">
+                    <div class="menu-unit"> 
+                        <ul class="profile">
+                            <li><a class="badge-campaign badge" href="">Campaign Plan</a></li>
+                        </ul>
+                        <ul class="menu-item">
+                            <li><a href=""><span>Follow</span></a></li>
+                            <li><a href=""><span>Follower</span></a></li>
+                        </ul>
+                        <ul class="menu-item">
+                            <li><a href=""><span>Borrowing History</span></a></li>
+                            <li><a href=""><span>Comment</span></a></li>
+                        </ul>
+                        <ul class="menu-item">
+                            <li><a href=""><span>Group</span></a></li>
+                            <li><a href=""><span>Event</span></a></li>
+                        </ul>
+                        <ul class="menu-item">
+                            <li><a href=""><span>Projects</span></a></li>
+                            <li><a href=""><span>About</span></a></li>
+                            <li><a href=""><span>Guidelines</span></a></li>
+                            <li><a href=""><span>Term Of Use</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="layout-east">
+                    <div class="content-east">
+                        <div class="content-main">
+                            <div class="rounded">
+                                <div class="NewsTop">
+                                    <h1>
+                                        <a href="" title="Info">Info</a>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="item-container">
+                                <img src="img/plankton.jpg" alt="plankton">
+                            </div>
+                        </div>
+                        <div id="column-misc" class="content-right">
+                            <section class="item daily-update">
+                                <h1>
+                                    <a href="">Daily Update</a>
+                                </h1>
+                                <ul class="categories">
+                                    <li class="">
+                                        <a href="" class="current">Overall</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Plankton</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Phytoplankton</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Zooplankton</a>
+                                    </li>
+                                </ul>
+                                <ol class="updating">
+                                    <li class="update-detail">
+                                        <div class="update-image-container">
+                                            <a href="" class="work">
+                                                <div class="layout-thumbnail">
+                                                    <img class="thumbnail"
+                                                    src="img/IFCB1_2009_001_003939_01829.png" alt style="opacity: 1;">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <h2>
+                                            <a href="">Plankton</a>
+                                        </h2>
+                                        <div class="user">
+                                            by
+                                            <a href="">
+                                                Mario
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="update-detail">
+                                        <div class="update-image-container">
+                                            <a href="" class="work">
+                                                <div class="layout-thumbnail">
+                                                    <img class="thumbnail"
+                                                    src="img/IFCB1_2009_001_003939_01829.png" alt style="opacity: 1;">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <h2>
+                                            <a href="">Plankton</a>
+                                        </h2>
+                                        <div class="user">
+                                            by
+                                            <a href="">
+                                                Mario
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="update-detail">
+                                        <div class="update-image-container">
+                                            <a href="" class="work">
+                                                <div class="layout-thumbnail">
+                                                    <img class="thumbnail"
+                                                    src="img/IFCB1_2009_001_003939_01829.png" alt style="opacity: 1;">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <h2>
+                                            <a href="">Plankton</a>
+                                        </h2>
+                                        <div class="user">
+                                            by
+                                            <a href="">
+                                                Mario
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div class="more">
+                                    <a href="">View more</a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
