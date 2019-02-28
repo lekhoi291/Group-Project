@@ -16,6 +16,8 @@ $(document).ready(function(){
     $("#file-input").change(function(){
         $('.image_container').css('display','block');
         $('.upload_wrapper').css('display', 'none');
+        var filename = this.files[0].name;
+        $('.image-name').text(filename);
         readURL(this);
     });
 

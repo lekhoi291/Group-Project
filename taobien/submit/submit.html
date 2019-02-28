@@ -27,7 +27,7 @@
                             <a href="">Help</a>
                         </li>
                         <li class="link-item settings-menu">
-                            <a href="" class="label">Settings▾</a>
+                            <a href="" class="label">Settings<span style='font-size:10px;'>&#9660;</span></a>
                             <ul class="items">
                                 <li>
                                     <a href="" class="item">User Settings</a>
@@ -110,8 +110,11 @@
                         </button>
                         <input type="file" multiple accept="image/gif,image/jpeg,image/png" id="file-input">
                         <div class="upload_note">
-                            JPEG GIF PNG<br>
-                            You can upload a file at once.
+                            JPEG PNG<br>
+                            <!-- You can upload up to 200 files, up to 32MB each<br>
+                            (The size can be up to 200MB) -->
+                            You can only upload a file at once <br>
+                            (The size can be up to 200MB)
                         </div>
                     </div>
                 </div>
@@ -120,6 +123,7 @@
                         <div class="remove_image">
                             <i class="icon_close"></i>
                         </div>  
+                        <div class="image-name"></div>
                     </div> 
                 </div>
             </div>
@@ -190,7 +194,7 @@
                                                 <option value="Ciliates">Ciliates</option>
                                                 <option value="Coccolithophore">Coccolithophore</option>
                                                 <option value="Miscellaneous">Miscellaneous</option>
-                                                <option value="Other_plankton">Others</option>
+                                                <!-- <option value="Other_Plankton">Other</option> -->
                                             </select>
                                         </li>
                                         <li class="Diatoms domains_types">
@@ -198,13 +202,132 @@
                                                 <option selected disabled hidden>Types</option>
                                                 <option value="Asterionellopsis">Asterionellopsis</option>
                                                 <option value="Bacillaria">Bacillaria</option>
+                                                <option value="Bidulphia">Bidulphia</option>
+                                                <option value="Cerataulina">Cerataulina</option>
+                                                <option value="Cerataulina_Flagellate">Cerataulina Flagellate</option>
+                                                <option value="Chaetoceros">Chaetoceros</option>
+                                                <option value="Chaetoceros_Didymus">Chaetoceros Didymus</option>
+                                                <option value="Chaetocero_Didymus_Flagellate">Chaetocero Didymus Flagellate</option>
+                                                <option value="Chaetoceros_Flagellate">Chaetoceros Flagellate</option>
+                                                <option value="Chaetoceros_Pennate">Chaetoceros Pennate</option>
+                                                <option value="Other_Chaetoceros">Other Chaetoceros</option>
+                                                <option value="Corethron">Corethron</option>
+                                                <option value="Coscinodiscus">Coscinodiscus</option>
+                                                <option value="Cylindrotheca">Cylindrotheca</option>
+                                                <option value="Dact_Frag_Cerataul">Dact Frag Cerataul</option>
+                                                <option value="Dactyliosolen">Dactyliosolen</option>
+                                                <option value="Delphineis">Delphineis</option>
+                                                <option value="Diatom_Flagellate">Diatom Flagellate</option>
+                                                <option value="Ditylum">Ditylum</option>
+                                                <option value="Ditylum_Parasite">Ditylum Parasite</option>
+                                                <option value="Ephemera">Ephemera</option>
+                                                <option value="Eucampia">Eucampia</option>
+                                                <option value="G_Delicatula_Detritus">G Delicatula Detritus</option>
+                                                <option value="G_Delicatula_Parasite">G Delicatula Parasite</option>
+                                                <option value="G_Delicatula_External_Parasite">G Delicatula External Parasite</option>
+                                                <option value="Guinardia_Delicatula">Guinardia_delicatula</option>
+                                                <option value="Guinardia_Flaccida">Guinardia Flaccida</option>
+                                                <option value="Guinardia_Striata">Guinardia Striata</option>
+                                                <option value="Hemiaulus">Hemiaulus</option>
+                                                <option value="Lauderia">Lauderia</option>
+                                                <option value="Leptocylindrus">Leptocylindrus</option>
+                                                <option value="Leptocylindrus_Mediterraneus">Leptocylindrus Mediterraneus</option>
+                                                <option value="Licmophora">Licmophora</option>
+                                                <option value="Mix_Elongated">Mix Elongated</option>
+                                                <option value="Odontella">Odontella</option>
+                                                <option value="Paralia">Paralia</option>
+                                                <option value="Pennate">Pennate</option>
+                                                <option value="Pennate_Morphotype1">Pennate Morphotype1</option>
+                                                <option value="Pennates_on_Diatoms">Pennates on Diatoms</option>
+                                                <option value="Pleurosigma">Pleurosigma</option>
+                                                <option value="Pseudonitzschia">Pseudonitzschia</option>
+                                                <option value="Rhizosolenia">Rhizosolenia</option>
+                                                <option value="Skeletonema">Skeletonema</option>
+                                                <option value="Stephanopyxis">Stephanopyxis</option>
+                                                <option value="Thalassionema">Thalassionema</option>
+                                                <option value="Thalassiosira">Thalassiosira</option>
+                                                <option value="Thalassiosira Dirty">Thalassiosira Dirty</option>
                                             </select>
                                         </li>
                                         <li class="Flagellates domains_types">
                                             <select>
                                                 <option selected disabled hidden>Types</option>
-                                                <option value="amoeba">amoeba</option>
+                                                <option value="Amoeba">Amoeba</option>
                                                 <option value="Chrysochromulina">Chrysochromulina</option>
+                                                <option value="Clusterflagellate">Clusterflagellate</option>
+                                                <option value="Dictyocha">Dictyocha</option>
+                                                <option value="Dinobryon">Dinobryon</option>
+                                                <option value="Euglena">Euglena</option>
+                                                <option value="Flagellate_sp3">Flagellate sp 3</option>
+                                                <option value="Parvicorbicula_Socialis">Parvicorbicula Socialis</option>
+                                                <option value="Phaeocystis">Phaeocystis</option>
+                                                <option value="Pseudochattonella_Farcimen">Pseudochattonella Farcimen</option>
+                                                <option value="Pyramimonas_Longicauda">Pyramimonas Longicauda</option>
+                                            </select>
+                                        </li>
+                                        <li class="Dinoflagellates domains_types">
+                                            <select>
+                                                <option selected disabled hidden>Types</option>
+                                                <option value="Akashiwo">Akashiwo</option>
+                                                <option value="Amphidinium sp">Amphidinium sp</option>
+                                                <option value="Ceratium">Ceratium</option>
+                                                <option value="Cochlodinium">Cochlodinium</option>
+                                                <option value="Dino30">Dino 30</option>
+                                                <option value="Dinophysis">Dinophysis</option>
+                                                <option value="Gonyaulax">Gonyaulax</option>
+                                                <option value="Gyrodinium">Gyrodinium</option>
+                                                <option value="Heterocapsa Triquetra">amoeba</option>
+                                                <option value="Karenia">Karenia</option>
+                                                <option value="Katodinium_or_Torodinium">Katodinium or Torodinium</option>
+                                                <option value="Prorocentrum">Prorocentrum</option>
+                                                <option value="Proterythropsis_sp">Proterythropsis sp</option>
+                                                <option value="Protoperidinium">Protoperidinium</option>
+                                                <option value="Dino_Large1">Dino Large 1</option>
+                                            </select>
+                                        </li>
+                                        <li class="Ciliates domains_types">
+                                            <select>
+                                                <option selected disabled hidden>Types</option>
+                                                <option value="Ciliate_mix">Ciliate Mix</option>
+                                                <option value="Didinium_sp">Didinium sp</option>
+                                                <option value="Euplotes_sp">Euplotes sp</option>
+                                                <option value="Laboea_strobila">Laboea Strobila</option>
+                                                <option value="Leegaardiella_ovalis">Leegaardiella Ovalis</option>
+                                                <option value="Mesodinium_sp">Mesodinium sp</option>
+                                                <option value="Pleuronema_sp">Pleuronema sp</option>
+                                                <option value="Strobilidium_morphotype1">Strobilidium Morphotype 1</option>
+                                                <option value="Strombidium_capitatum">Strombidium Capitatum</option>
+                                                <option value="Strombidium_conicum">Strombidium Conicum</option>
+                                                <option value="Strombidium_inclinatum">Strombidium Inclinatum</option>
+                                                <option value="Strombidium_morphotype1">Strombidium Morphotype 1</option>
+                                                <option value="Strombidium_morphotype2">Strombidium Morphotype 2</option>
+                                                <option value="Strombidium_oculatum">Strombidium Oculatum</option>
+                                                <option value="Strombidium_wulffi">Strombidium Wulffi</option>
+                                                <option value="Tiarina_fusus">Tiarina Fusus</option>
+                                                <option value="Tintinnid">Tintinnid</option>
+                                                <option value="Tontonia_appendiculariformis">Tontonia Appendiculariformis</option>
+                                                <option value="Tontonia_gracillima">Tontonia Gracillima</option>
+                                            </select>
+                                        </li>
+                                        <li class="Coccolithophore domains_types">
+                                            <select>
+                                                <option selected disabled hidden>Types</option>
+                                                <option value="Emiliania_huxleyi">Emiliania Huxleyi</option>
+                                            </select>
+                                        </li>
+                                        <li class="Miscellaneous domains_types">
+                                            <select>
+                                                <option selected disabled hidden>Types</option>
+                                                <option value="bad">Bad</option>
+                                                <option value="bead">Bead</option>
+                                                <option value="bubble">Bubble</option>
+                                                <option value="detritus">Detritus</option>
+                                                <option value="mix">Mix</option>
+                                                <option value="other_interaction">Other Interaction</option>
+                                                <option value="pollen">Pollen</option>
+                                                <option value="spore">Spore</option>
+                                                <option value="zooplankton">Zooplankton</option>
+                                                <option value="kiteflagellates">Kiteflagellates</option>
                                             </select>
                                         </li>
                                         <script src="js/select_box.js"></script>

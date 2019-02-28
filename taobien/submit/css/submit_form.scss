@@ -36,6 +36,11 @@
             box-sizing: content-box;
         }
 
+        .icon_select_upload{
+            color: #fff;
+            vertical-align: baseline;
+        }
+
         input{
             opacity: 0;
             position: absolute;
@@ -55,6 +60,7 @@
             margin-top: 10px;
             line-height: 1.3;
             color: #ccc;
+            font-size: 13.5px;
         }
     }
 }
@@ -108,6 +114,21 @@
             .remove_image{
                 display: inline-block;
             }
+        }
+
+        .image-name{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 138px;
+            padding: 3px 6px;
+            font-size: 11px;
+            line-height: 15px;
+            background-color: rgba(0,0,0,.5);
+            direction: ltr;
+            text-align: left;
+            color: white;
+            font-size: 14px;
         }
     }
 }
